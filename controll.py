@@ -1,6 +1,6 @@
 from create_data import add_data
 from face_recognize import recognize
-print("Press 1-To insert new face in database\n 2- To recognise faces")
+print("Press A-To insert new face in database\n B- To recognise faces")
 user=input("Enter here")
 
 if(user=='a'):
