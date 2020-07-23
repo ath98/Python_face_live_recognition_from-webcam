@@ -2,7 +2,7 @@ import keyboard
 import cv2, numpy, os 
 size = 4
 haar_file = 'haarcascade_frontalface_default.xml'
-datasets = 'D:\datasets'
+datasets = 'datasets'
   
 def recognize():  
   
@@ -23,9 +23,9 @@ def recognize():
 
     model = cv2.face.LBPHFaceRecognizer_create() 
     model.train(images, lables) 
-      face_cascade = cv2.CascadeClassifier(haar_file) 
+    face_cascade = cv2.CascadeClassifier(haar_file) 
     webcam = cv2.VideoCapture(0) 
-    while True: 
+    while keyboard.is_pressed('q')!=True : 
         (_, im) = webcam.read() 
         gray = cv2.cvtColor(im, cv2.COLOR_BGR2GRAY) 
         faces = face_cascade.detectMultiScale(gray, 1.3, 5) 
@@ -50,6 +50,5 @@ def recognize():
       
         key = cv2.waitKey(10)
         if key==27: 
-            break
-        
-            cv2.destroyAllWindows()
+            break        
+    cv2.destroyAllWindows()

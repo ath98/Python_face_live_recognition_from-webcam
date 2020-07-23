@@ -1,4 +1,3 @@
-
 from create_data import add_data
 from face_recognize import recognize
 print("Press 1-To insert new face in database\n 2- To recognise faces")
