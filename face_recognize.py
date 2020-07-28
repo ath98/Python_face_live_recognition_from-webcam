@@ -2,7 +2,8 @@ import keyboard
 import cv2, numpy, os 
 size = 4
 haar_file = 'haarcascade_frontalface_default.xml'
-datasets = 'D:/datasets'
+#Create a folder in your local drive and give the path below
+datasets = 'datasets'
   
 def recognize():  
   

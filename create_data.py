@@ -1,10 +1,10 @@
-
 import cv2, os 
 haar_file = 'haarcascade_frontalface_default.xml'
   
 #Will save data here
 def add_data(name):
-    datasets = 'D:/datasets'  
+    #Create a folder in your local drive and give the path below
+    datasets = 'datasets'  
   
     sub_data = name     
   
