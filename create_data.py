@@ -4,7 +4,7 @@ haar_file = 'haarcascade_frontalface_default.xml'
   
 #Will save data here
 def add_data(name):
-    datasets = 'datasets'  
+    datasets = 'D:/datasets'  
   
     sub_data = name     
   

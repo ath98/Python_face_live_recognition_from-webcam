@@ -2,7 +2,7 @@ import keyboard
 import cv2, numpy, os 
 size = 4
 haar_file = 'haarcascade_frontalface_default.xml'
-datasets = 'datasets'
+datasets = 'D:/datasets'
   
 def recognize():  
   
